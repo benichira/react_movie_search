@@ -1,0 +1,41 @@
+.header-container {
+    /*width: 100%;*/
+    height: 100px;
+    background: darkslategrey;
+    padding: 0;
+    margin: 0px;
+}
+
+.logo-container {
+    width: 100%;
+    height: 50px;
+    background: darkred;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+
+.main-navigation {
+    display: flex;
+    justify-content: center;
+}
+
+.main-navigation ul {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    height: 50px;
+}
+
+.main-navigation ul li {
+    margin-left: 50px;
+    margin-right: 50px;
+    list-style-type: none;
+    height: 50px;
+    transition: 0.25s ease;
+    text-decoration: none;
+}
+
+.main-navigation ul li:hover {
+    background: #132116;
+}

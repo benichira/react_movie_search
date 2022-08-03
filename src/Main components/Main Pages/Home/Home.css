@@ -1,0 +1,42 @@
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    color: white;
+    padding: 50px;
+}
+
+.home-container h2 {
+    width: 500px;
+}
+
+.home-container hr {
+    width: 100%;
+    height: 5px;
+    background: white;
+}
+
+.home-container input {
+    width: 500px;
+    height: 20px;
+    background: none;
+    border: 1px solid white;
+    color: white;
+}
+
+.recommendation-container {
+    display: grid;
+    gap: 50px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.movie-card {
+    height: 100px;
+    background: brown;
+    transition: 0.25s ease-in-out;
+}
+
+.movie-card:hover {
+    background: darkred;
+}
