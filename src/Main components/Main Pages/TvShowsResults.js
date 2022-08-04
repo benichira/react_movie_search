@@ -9,12 +9,10 @@ const TvShowsResults = (props) => {
             <div className='search-results'>
                 {props.show.data.results.slice(0, 10).map((item) => (
                     <Link key={item.id} to={`/${item.id}`}>
-                        <div key={item.id}>
-                            <div>
-
-                            </div>
+                        <div className='movie-results-card'>
+                            <img src={`http://image.tmdb.org/t/p/w500/${item.poster_path}`}/>
                             <h3>
-                                {item.original_name}
+                                {item.original_title}
                             </h3>
                         </div>
                     </Link>

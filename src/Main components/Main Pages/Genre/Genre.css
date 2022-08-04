@@ -21,3 +21,34 @@
     background: white;
     color: #000001;
 }
+
+.genre-container h1 {
+    color: white;
+}
+
+.genre-results-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+    color: white;
+}
+
+.genre-results-container .genre-card img {
+    object-fit: cover;
+    height: 400px;
+    justify-self: center;
+    transition: 0.25s ease-in-out;
+
+}
+
+.genre-results-container .genre-card {
+    height: fit-content;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+
+.genre-results-container a {
+    text-decoration: none;
+    color: white;
+}

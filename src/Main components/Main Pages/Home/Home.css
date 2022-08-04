@@ -38,12 +38,20 @@
     text-align: center;
 }
 
-.movie-card:hover {
-    background: darkred;
-}
 
 .movie-card img {
     object-fit: cover;
     height: 400px;
     justify-self: center;
+    box-shadow: 1px 1px 1px 2px white;
+}
+
+.movie-card img:hover {
+    box-shadow: 1px 1px 1px 4px white;
+
+}
+
+.recommendation-container a {
+    text-decoration: none;
+    color: white;
 }

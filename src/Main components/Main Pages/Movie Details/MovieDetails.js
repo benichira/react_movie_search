@@ -21,7 +21,7 @@ function MovieDetails({trendingMovies}) {
             .catch((err) => {
                 console.error(err)
             })
-    }, [params])
+    }, [params.movieId])
     // console.log('movie', movie)
 
     //OR YOU CAN DO IT THIS WAY

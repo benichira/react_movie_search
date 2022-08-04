@@ -63,7 +63,7 @@ function App(props) {
                 if (responseOne.data && responseOne.data.results) {
                     setTrending(responseOne.data.results)
                 }
-                //does thw same thing as above, check s if value is either null or undefined, it's called CHAINING OPERATOR
+                //does the same thing as above, check s if value is either null or undefined, it's called CHAINING OPERATOR
                 // setTrending(responseOne?.data?.results)
 
                 setGenres(responseTwo)
