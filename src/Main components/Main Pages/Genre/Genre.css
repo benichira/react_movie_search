@@ -1,0 +1,23 @@
+.genre-container {
+    /*background: white;*/
+    padding: 20px;
+}
+
+.genre-btns {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.genre-btns button {
+    background: none;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+    transition: 0.15s ease-in-out;
+}
+
+.genre-btns button:hover {
+    background: white;
+    color: #000001;
+}

@@ -7,6 +7,7 @@ import axios from "axios";
 function MovieDetails({trendingMovies}) {
     const [movie, setMovie] = useState(null)
     const params = useParams();
+    // console.log("path--->", params.movieId)
 
     useEffect(() => {
         axios
@@ -14,13 +15,13 @@ function MovieDetails({trendingMovies}) {
             .then((res) => {
                 if (res.data) {
                     setMovie(res.data)
-                    console.log('res--->', res)
+                    // console.log('res--->', res)
                 }
             })
             .catch((err) => {
                 console.error(err)
             })
-    }, [])
+    }, [params])
     // console.log('movie', movie)
 
     //OR YOU CAN DO IT THIS WAY
