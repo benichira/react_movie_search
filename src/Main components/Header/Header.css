@@ -27,7 +27,8 @@
     height: 50px;
 }
 
-.main-navigation ul li {
+.main-navigation ul a {
+    color: white;
     margin-left: 50px;
     margin-right: 50px;
     list-style-type: none;
@@ -36,6 +37,6 @@
     text-decoration: none;
 }
 
-.main-navigation ul li:hover {
+.main-navigation ul a:hover {
     background: #132116;
 }

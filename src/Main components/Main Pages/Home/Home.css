@@ -28,15 +28,22 @@
 .recommendation-container {
     display: grid;
     gap: 50px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .movie-card {
-    height: 100px;
-    background: brown;
+    height: fit-content;
+    /*background: brown;*/
     transition: 0.25s ease-in-out;
+    text-align: center;
 }
 
 .movie-card:hover {
     background: darkred;
+}
+
+.movie-card img {
+    object-fit: cover;
+    height: 400px;
+    justify-self: center;
 }

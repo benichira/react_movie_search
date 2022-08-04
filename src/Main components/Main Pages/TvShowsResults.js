@@ -1,17 +1,18 @@
 import React from 'react';
-import "./MovieResults.css"
+import './TvShowsResults.css'
 
-const MovieResults = ({movie}) => {
-    if (movie) {
+const TvShowsResults = (props) => {
+    if (props.show) {
+        console.log(props.show)
         return (
             <div className='search-results'>
-                {movie.data.results.slice(0, 10).map((item) => (
+                {props.show.data.results.slice(0, 10).map((item) => (
                     <div key={item.id}>
                         <div>
 
                         </div>
                         <h3>
-                            {item.original_title}
+                            {item.original_name}
                         </h3>
                     </div>
                 ))}
@@ -20,4 +21,4 @@ const MovieResults = ({movie}) => {
     }
 };
 
-export default MovieResults;
+export default TvShowsResults;
