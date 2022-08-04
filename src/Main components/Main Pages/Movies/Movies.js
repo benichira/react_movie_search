@@ -27,10 +27,12 @@ function Movies({movieSearch, handleMovieInput}) {
     return (
         <div className='movies-wrapper'>
             <h2>Find movies</h2>
-            <input type='text' value={movieSearch} onChange={handleMovieInput}/>
-            <button onClick={handleMovieSubmit}>
-                Search
-            </button>
+            <div className='input-container'>
+                <input type='text' value={movieSearch} onChange={handleMovieInput}/>
+                <button onClick={handleMovieSubmit}>
+                    Search
+                </button>
+            </div>
             <MovieResults movie={movie}/>
         </div>);
 }

@@ -1,3 +1,32 @@
 .movies-wrapper {
     text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.movies-wrapper input {
+    background: none;
+    width: 600px;
+    height: 35px;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+    margin-right: 10px;
+    font-size: 25px;
+}
+
+.movies-wrapper button {
+    color: white;
+    height: 35px;
+    width: 100px;
+    background: none;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
 }

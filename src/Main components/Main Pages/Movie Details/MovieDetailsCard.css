@@ -7,10 +7,12 @@
 
 .movie-container .movie-content {
     padding: 30px 150px 30px 150px;
-    background: green;
+    background: black;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    color: white;
 }
 
 .movie-container .movie-content img {
@@ -18,7 +20,7 @@
 }
 
 .movie-container .movie-content .movie-description {
-    width: 400px;
+    width: 500px;
 }
 
 .movie-container .movie-content .movie-description h1 {
@@ -34,8 +36,22 @@
 }
 
 .related-movies-container {
+    margin-top: 50px;
     display: flex;
     flex-direction: row;
-    overflow: hidden;
+    overflow: scroll;
     scroll-behavior: smooth;
+}
+
+.related-movies-container div {
+    height: 400px;
+    margin: 10px 25px 10px 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.related-movies-container div img {
+    height: 350px;
 }

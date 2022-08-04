@@ -13,7 +13,7 @@ const RelatedMovies = ({movieId}) => {
             .then((res) => {
                 // console.log('related movies', res)
                 if (res.data && res.data.results) {
-                    setRelatedMovies(res.data.results)
+                    setRelatedMovies(res.data.results.slice(0, 20))
                 }
 
             })
@@ -27,6 +27,7 @@ const RelatedMovies = ({movieId}) => {
             {relatedMovies.map((movie) => (
                 <div key={movie.id}>
                     <img src={`http://image.tmdb.org/t/p/w500/${movie.poster_path}`}/>
+                    <p>{movie.title}</p>
                 </div>
             ))}
         </div>

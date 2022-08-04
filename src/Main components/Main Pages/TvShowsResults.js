@@ -1,5 +1,6 @@
 import React from 'react';
-import './TvShowsResults.css'
+import './TvShowsResults.css';
+import {Link} from "react-router-dom";
 
 const TvShowsResults = (props) => {
     if (props.show) {
@@ -7,14 +8,16 @@ const TvShowsResults = (props) => {
         return (
             <div className='search-results'>
                 {props.show.data.results.slice(0, 10).map((item) => (
-                    <div key={item.id}>
-                        <div>
+                    <Link key={item.id} to={`/${item.id}`}>
+                        <div key={item.id}>
+                            <div>
 
+                            </div>
+                            <h3>
+                                {item.original_name}
+                            </h3>
                         </div>
-                        <h3>
-                            {item.original_name}
-                        </h3>
-                    </div>
+                    </Link>
                 ))}
             </div>
         );
