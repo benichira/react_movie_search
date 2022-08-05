@@ -38,9 +38,9 @@ function Genre(props) {
             .get(`https://api.themoviedb.org/3/discover/movie?api_key=9a99b30d21b8a588189ca7ab443a2d3d&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_genres=${selectedGenreId}&with_watch_monetization_types=flatrate`)
             .then((res) => {
                 console.log('res', res)
-                if (res.data && res.data.results) {
-                    setGenryQuery(res.data.results)
-                }
+                // if (res.data && res.data.results) {
+                setGenryQuery(res?.data?.results)
+                // }
             })
             .catch((err) => {
                 console.error(err)

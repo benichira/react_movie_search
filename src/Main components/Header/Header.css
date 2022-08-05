@@ -1,7 +1,7 @@
 .header-container {
     /*width: 100%;*/
     height: 100px;
-    background: darkslategrey;
+    /*background: darkslategrey;*/
     padding: 0;
     margin: 0px;
 }
@@ -18,6 +18,7 @@
 .main-navigation {
     display: flex;
     justify-content: center;
+    /*margin: 10px 0 50px 0*/
 }
 
 .main-navigation ul {
@@ -28,6 +29,9 @@
 }
 
 .main-navigation ul a {
+    display: flex;
+    align-items: center;
+    padding: 0px 30px 0px 30px;
     color: white;
     margin-left: 50px;
     margin-right: 50px;

@@ -1,6 +1,7 @@
 .genre-container {
     /*background: white;*/
     padding: 20px;
+    margin-top: 50px;
 }
 
 .genre-btns {
@@ -15,6 +16,7 @@
     border-radius: 5px;
     color: white;
     transition: 0.15s ease-in-out;
+    padding: 10px;
 }
 
 .genre-btns button:hover {
@@ -23,6 +25,7 @@
 }
 
 .genre-container h1 {
+    margin: 40px 30px 40px 0;
     color: white;
 }
 

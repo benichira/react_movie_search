@@ -8,18 +8,10 @@ function Header() {
             <div className='logo-container'>"Movies logo"</div>
             <div className='main-navigation'>
                 <ul>
-                    <div>
-                        <Link to='/'>Home</Link>
-                    </div>
-                    <div>
-                        <Link to='/genres'>Genre</Link>
-                    </div>
-                    <div>
-                        <Link to='/movies'>Movies</Link>
-                    </div>
-                    <div>
-                        <Link to='/TV_series'>TV Series</Link>
-                    </div>
+                    <Link to='/'>Home</Link>
+                    <Link to='/genres'>Genre</Link>
+                    <Link to='/movies'>Movies</Link>
+                    <Link to='/TV_series'>TV Series</Link>
                     {/*<li>*/}
                     {/*    <Link to='/v'>Top ImBD</Link>*/}
                     {/*</li>*/}
