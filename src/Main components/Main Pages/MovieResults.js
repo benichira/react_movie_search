@@ -4,6 +4,7 @@ import {Link} from "react-router-dom";
 
 const MovieResults = ({movie}) => {
     if (movie) {
+        // console.log(movie)
         return (
             <div className='search-results'>
                 {movie.data.results.slice(0, 10).map((item) => (

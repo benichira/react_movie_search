@@ -4,11 +4,12 @@ import axios from 'axios';
 //Components
 import Home from "./Main components/Main Pages/Home/Home"
 import Header from "./Main components/Header/Header"
-import MovieResults from "./Main components/Main Pages/MovieResults";
+// import MovieResults from "./Main components/Main Pages/MovieResults";
 import Genre from "./Main components/Main Pages/Genre/Genre"
 import TvSeries from "./Main components/Main Pages/TV Series/TVSeries";
 import Movies from "./Main components/Main Pages/Movies/Movies";
 import MovieDetails from "./Main components/Main Pages/Movie Details/MovieDetails";
+import TvDetails from "./Main components/Main Pages/TV Show details/TvDetails";
 
 function App(props) {
     const [trendingMovies, setTrending] = useState([])
@@ -117,6 +118,10 @@ function App(props) {
                     handleUrlPath={handleUrlPath}
                     trendingMovies={trendingMovies}
                 />}>
+            </Route>
+            <Route path={`/shows/:tvId`}
+                   element={<TvDetails/>}
+            >
             </Route>
         </Routes>
     </div>);

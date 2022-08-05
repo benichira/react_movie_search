@@ -5,7 +5,7 @@ import './TVSeries.css'
 import TvShowsResults from "../TvShowsResults";
 
 function TvSeries({showSearch, handleTvShowInput}) {
-    const [tvSerie, setTvSerie] = useState(null)
+    const [tvSeries, setTvSerie] = useState(null)
 
     // const [showSearch, setShowSearch] = useState(false)
 
@@ -21,9 +21,10 @@ function TvSeries({showSearch, handleTvShowInput}) {
         }
         //implement debounce
         axios
+            // .get(`https://api.themoviedb.org/3/search/tv?api_key=9a99b30d21b8a588189ca7ab443a2d3d&language=en-US&page=1&query=${showSearch}&include_adult=false`)
             .get(`https://api.themoviedb.org/3/search/tv?api_key=9a99b30d21b8a588189ca7ab443a2d3d&language=en-US&page=1&query=${showSearch}&include_adult=false`)
             .then((res) => {
-                // console.log('res', res)
+                console.log('res', res)
                 setTvSerie(res)
             })
             .catch((errors) => {
@@ -31,6 +32,7 @@ function TvSeries({showSearch, handleTvShowInput}) {
             });
     }, [showSearch])
 
+    console.log('tvseries--->', tvSeries)
 
     return (
         <div className='shows-wrapper'>
@@ -45,7 +47,7 @@ function TvSeries({showSearch, handleTvShowInput}) {
             {/*>*/}
             {/*    Search*/}
             {/*</button>*/}
-            <TvShowsResults show={tvSerie}/>
+            <TvShowsResults show={tvSeries}/>
         </div>
     );
 }

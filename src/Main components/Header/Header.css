@@ -43,4 +43,5 @@
 
 .main-navigation ul a:hover {
     background: #132116;
+    border-top: 5px solid green;
 }
