@@ -22,6 +22,7 @@ function MovieDetails({trendingMovies}) {
                 console.error(err)
             })
     }, [params.movieId])
+
     // console.log('movie', movie)
 
     //OR YOU CAN DO IT THIS WAY

@@ -1,11 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Jost:wght@300;400&family=Roboto+Mono:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
 body {
-    font-family: 'Cinzel', serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     height: 100%;
     width: 100%;
-    background: #000001;
+    background: #060606;
+    /*backgroundImage: "url(src/Assets/jake-weirick-Q_RBVFFXR_g-unsplash.jpg)";*/
+    /*backgroundSize: 'cover';*/
+    /*backgroundRepeat: 'no-repeat';*/
     /*background-image: url("");*/
     padding: 0;
 }

@@ -5,7 +5,9 @@ import {Link} from "react-router-dom";
 function Header() {
     return (
         <div className='header-container'>
-            <div className='logo-container'>"Movies logo"</div>
+            <div className='logo-container'>
+                cinematic.
+            </div>
             <div className='main-navigation'>
                 <ul>
                     <Link to='/'>Home</Link>

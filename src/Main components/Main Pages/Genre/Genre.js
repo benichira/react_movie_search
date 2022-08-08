@@ -48,23 +48,28 @@ function Genre(props) {
     }, [selectedGenreId])
 
     if (genre.length) {
-        return (<div className='genre-container'>
-            <div className='genre-btns'>
-                {genre.map((item) => (
-                    <button key={item.id} onClick={() => handleGenreChange(item.id, item.name)}>{item.name}</button>))}
-            </div>
-            <h1>{selectedGenreName}</h1>
-            <div className='genre-results-container'>
-                {genreQuery.map((movie) => (
-                    <Link key={movie.id} to={`/${movie.id}`}>
-                        <div className='genre-card'>
-                            <img src={`http://image.tmdb.org/t/p/w500/${movie.poster_path}`}/>
-                            <h3>{movie.title}</h3>
-                        </div>
-                    </Link>
-                ))}
-            </div>
-        </div>);
+        return (
+            <div>
+                {/*<h1 className='page-name'></h1>*/}
+                <h1 className='page-name'>{selectedGenreName}</h1>
+                <div className='genre-container'>
+                    <div className='genre-btns'>
+                        {genre.map((item) => (
+                            <button key={item.id}
+                                    onClick={() => handleGenreChange(item.id, item.name)}>{item.name}</button>))}
+                    </div>
+                    <div className='genre-results-container'>
+                        {genreQuery.map((movie) => (
+                            <Link key={movie.id} to={`/${movie.id}`}>
+                                <div className='genre-card'>
+                                    <img src={`http://image.tmdb.org/t/p/w500/${movie.poster_path}`}/>
+                                    <h3>{movie.title}</h3>
+                                </div>
+                            </Link>
+                        ))}
+                    </div>
+                </div>
+            </div>);
     }
 }
 
