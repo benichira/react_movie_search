@@ -7,7 +7,7 @@ import axios from "axios";
 function MovieDetails({trendingMovies}) {
     const [movie, setMovie] = useState(null)
     const params = useParams();
-    // console.log("path--->", params.movieId)
+    console.log("path--->", params.movieId)
 
     useEffect(() => {
         axios

@@ -5,7 +5,8 @@ body {
     margin: 0;
     height: 100%;
     width: 100%;
-    background: #060606;
+    background: white;
+    /*background: #060606;*/
     /*backgroundImage: "url(src/Assets/jake-weirick-Q_RBVFFXR_g-unsplash.jpg)";*/
     /*backgroundSize: 'cover';*/
     /*backgroundRepeat: 'no-repeat';*/
